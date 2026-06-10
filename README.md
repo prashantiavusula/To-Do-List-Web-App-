@@ -32,4 +32,5 @@ It helps users manage daily tasks easily.
 
 ## 👨‍💻 Author
 avusula prashanti
+
 Internship Project - Synent Technologies
