@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager Pro</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>📌 Task Manager</h1>
+
+    <!-- ⭐ ADDED STATS (NO LAYOUT CHANGE) -->
+    <div class="stats">
+      <div>Total: <span id="totalCount">0</span></div>
+      <div>Pending: <span id="pendingCount">0</span></div>
+      <div>Completed: <span id="completedCount">0</span></div>
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-box">
+      <input id="taskInput" type="text" placeholder="Enter your task..." />
+
+      <select id="priority">
+        <option value="high">🔴 High</option>
+        <option value="medium">🟡 Medium</option>
+        <option value="low">🟢 Low</option>
+      </select>
+
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <!-- BOARD -->
+    <div class="board">
+
+      <div class="column high">
+        <h2>🔴 High</h2>
+        <div id="highList" class="list"></div>
+      </div>
+
+      <div class="column medium">
+        <h2>🟡 Medium</h2>
+        <div id="mediumList" class="list"></div>
+      </div>
+
+      <div class="column low">
+        <h2>🟢 Low</h2>
+        <div id="lowList" class="list"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
